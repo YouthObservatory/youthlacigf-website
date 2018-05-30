@@ -109,3 +109,20 @@
 
 #footer {
   margin-bottom: 8vw; }
+
+.promo-content{
+	background-color: #033c5a;
+	padding: 80px;
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	font-weight:bold;
+	line-height: 1.6;
+}
+
+.promo-content span{
+	font-size:64px;
+	line-height: 1.8
+}
+.wd-60{ width:60%!important; }
+
