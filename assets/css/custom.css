@@ -141,7 +141,7 @@
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {.wd-60{ width:100%!important; }
+@media only screen and (max-width: 768px) {.wd-60{ width:100%!important; }
 .promo-content span{
   font-size:30px;
   line-height: 1.2
@@ -150,16 +150,4 @@
   
   font-size: 18px;
   line-height: 1.6;
-}} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {.wd-60{ width:100%!important; }
-.promo-content span{
-  font-size:30px;
-  line-height: 1.2
-}
-.promo-content{
-  
-  font-size: 18px;
-  line-height: 1.8;
 }} 
