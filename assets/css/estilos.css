@@ -56,7 +56,7 @@ body {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #d01123;
+  background-color: #1394ca;
  border-color: none;
     border-style: none;
   
@@ -221,7 +221,7 @@ a:before, a:after {
 	margin-top: 70px;
 }
 #headerwrap h1 {
-	color: #ca1329;
+	color: #1394ca;
 	font-size: 280%;
 	font-weight: bold;
 	text-align: center;
@@ -280,7 +280,7 @@ a:before, a:after {
 
 
 #lacigf {
-	background: #d01123;
+	background: #1394ca;
 	text-align:center;
 	padding-bottom: 70px;
 	padding-top: 70px;
@@ -323,7 +323,7 @@ a:before, a:after {
 }
 
 .btn-default:hover{
-    background-color: #d30e29;
+    background-color: #1394ca;
     color: white;
 }
 
@@ -331,22 +331,29 @@ a:before, a:after {
 #becas{
     text-align: center;
     background: url(../img/becas.jpg);
-    color:white;
+    color:#222;
     padding-bottom: 50px;
     padding-top: 50px;   
 }
 
 #becas h3{
-    color: white;
+    color: #333;
     margin-bottom: 30px;
     font-weight: bold;
     
 }
 
+#becas p {
+
+	background: #ffffffb8;
+    padding: 20px;
+    border-radius: 15px;
+}
+
 .requisitos{
     font-size: 16px;
     font-weight: 400;
-    background-color: #d30e29;
+    background-color: #1394ca;
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -434,7 +441,7 @@ padding-top: 60px;
 }
 
 #apoyo{
-    background-color: #9ad9ea;
+    background-color: #1394ca;
     padding-bottom: 40px;
     padding-top: 40px;
     text-align: center;
@@ -443,9 +450,11 @@ padding-top: 60px;
 
 #apoyo a{
     font-weight: 600;
-    color: #555;
+    color: #fff;
     
 }
+
+#apoyo h3,#apoyo p { color:#fff; }
 
 #footer {
 	background-color: white;
