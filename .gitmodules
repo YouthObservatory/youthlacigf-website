@@ -1,4 +1,4 @@
-[submodule "2018"]
-	path = 2018
+[submodule "2017"]
+	path = 2017
 	url = https://github.com/encels/youthlacigf-website.git
-	branch = newsite2018
+	branch = old2017
