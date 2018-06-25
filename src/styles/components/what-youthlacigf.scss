@@ -1,0 +1,66 @@
+.what-youthlacigf {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.5rem;
+    @include breakpoint(768) {
+      padding: 2rem 0.5rem 2rem 0.5rem;
+    }
+    @include breakpoint(1360) {
+      padding: 3rem 4rem 3rem 8rem;
+    }
+    > .column-alfa {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(768) {
+        width: 50%;
+      }
+      .logo {
+        margin-top: 1rem;
+        max-width: 150px;
+        @include breakpoint(768) {
+          margin-top: 0;
+        }
+      }
+    }
+    > .column-beta {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(768) {
+        width: 50%;
+      }
+      > .content {
+        width: 100%;
+        @include breakpoint(768) {
+          width: 80%;
+        }
+        .title {
+          font-family: 'Syncopate';
+          font-weight: 400;
+          text-transform: uppercase;
+          color: $font-color;
+          .youth {
+            color: $blue;
+            font-family: 'Syncopate';
+            font-weight: 700;
+          }
+          .lacigf {
+            color: $yellow;
+            font-family: 'Syncopate';
+            font-weight: 700;
+            margin-left: -0.7rem;
+          }
+        }
+        .text {
+          color: $font-color;
+        }
+      }
+    }
+  }
+}
