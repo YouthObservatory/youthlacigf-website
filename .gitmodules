@@ -2,3 +2,7 @@
 	path = 2017
 	url = https://github.com/encels/youthlacigf-website.git
 	branch = old2017
+[submodule "new"]
+	path = new
+	url = https://github.com/encels/youthlacigf-website.git
+	branch = newVersion
