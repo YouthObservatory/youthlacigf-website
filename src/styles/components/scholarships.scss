@@ -95,7 +95,9 @@
       }
     }
     > .column-beta {
-      align-items: stretch;
+      @include breakpoint(768) {
+        align-items: stretch;
+      }
     }
   }
 }
