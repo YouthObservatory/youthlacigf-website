@@ -1,0 +1,9 @@
+@media screen and (min-width:68.75em) {
+ .hero>.inner-container .column-alfa>.content {
+  width:90%;
+ }
+}
+.navbar>.inner-container>.language-list>.language-list-item>.anchor.active{
+	 color:#3c4661;
+	 text-decoration: underline;
+}
