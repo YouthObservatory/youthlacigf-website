@@ -1,0 +1,103 @@
+.scholarships {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0 0.5rem;
+    @include breakpoint(768) {
+      padding: 0 0.5rem;
+    }
+    @include breakpoint(1360) {
+      padding: 0 4rem 0 0rem;
+      background: linear-gradient(to left, $blue-dark 4rem, $white 4rem);
+    }
+    > .column-alfa {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(768) {
+        width: 50%;
+      }
+      > .image-container {
+        display: block;
+        .image {
+          display: block;
+        }
+      }
+    }
+    > .column-beta {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(768) {
+        width: 50%;
+      }
+    }
+  }
+  > .inner-container.row-top {
+    > .column-alfa {
+      order: 2;
+      @include breakpoint(768) {
+        order: 1;
+      }
+    }
+    > .column-beta {
+      order: 1;
+      background-color: $blue;
+      text-transform: uppercase;
+      > .title {
+        font-family: 'Syncopate';
+        font-weight: 400;
+        color: $white;
+      }
+      @include breakpoint(768) {
+        order: 2;
+      }
+    }
+  }
+  > .inner-container.row-bottom {
+    > .column-alfa {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > .content {
+        width: 100%;
+        @include breakpoint(1024) {
+          width: 80%;
+        }
+        .text {
+          color: $font-color;
+        }
+        .cta-scholarships {
+          display: inline-block;
+          font-family: Khand;
+          font-size: 1.2rem;
+          color: $font-color;
+          padding: 0.5rem 1rem;
+          border: 1px solid $blue;
+          border-radius: 0.3rem;
+          line-height: 1;
+          margin: 1rem 0;
+          transition: all 0.3s;
+          @include breakpoint(1024) {
+            padding: 0.8rem 1.3rem;
+          }
+          &:hover {
+            color: $font-color-light;
+            background-color: $blue-dark;
+            border-color: $blue-dark;
+          }
+        }
+      }
+    }
+    > .column-beta {
+      @include breakpoint(768) {
+        align-items: stretch;
+      }
+    }
+  }
+}

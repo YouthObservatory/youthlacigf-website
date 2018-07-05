@@ -1,0 +1,200 @@
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  &.-on-scroll {
+    > .inner-container {
+      height: 70px;
+      @include box-shadow(2px, 2px, 5px, 0px, rgba(79, 79, 79, 0.3));
+      > .link-logo {
+        > .logo {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  > .inner-container {
+    position: relative;
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    padding: 0.5rem 0.5rem 0;
+    background-color: $white;
+    height: 101px;
+    transition: all 0.3s;
+    @include breakpoint(768) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include breakpoint(1360) {
+      padding: 0.5rem 4rem 0.5rem 8rem;
+      background: linear-gradient(to right, $blue 4rem, $white 4rem);
+    }
+    > .link-logo {
+      display: block;
+      width: 40%;
+      @include breakpoint(470) {
+        width: 20%;
+      }
+      > .logo {
+        width: 100%;
+        max-width: 150px;
+        transition: all 0.3s;
+      }
+    }
+    > .hamburguer-button {
+      &.-open {
+        .bar:nth-child(1) {
+          background-color: $gray-logo;
+          transform: translateY(8px) translateX(0) rotate(45deg);
+        }
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+        .bar:nth-child(3) {
+          background-color: $gray-logo;
+          transform: translateY(-14px) translateX(0) rotate(-45deg);
+        }
+      }
+      @include breakpoint(768) {
+        display: none;
+      }
+      position: absolute;
+      top: 43px;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 45px;
+      height: 35px;
+      > .bar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 6px auto;
+        background-color: $blue;
+        transition: 0.4s;
+      }
+    }
+    > .menu-list {
+      background-color: $white;
+      margin: 5px -8px 0;
+      @include breakpoint(768) {
+        margin: 0 0 0 0;
+      }
+      &.-open {
+        height: 175px;
+      }
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+      @include breakpoint(768) {
+        height: auto;
+        display: flex;
+      }
+      > .menu-list-item {
+        text-align: center;
+        border-top: 1px solid $font-color;
+        &.-active {
+          > .anchor {
+            position: relative;
+            color: $blue-dark;
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+        @include breakpoint(768) {
+          border: none;
+          &:not(:last-child) {
+            margin-right: 1rem;
+          }
+        }
+        @include breakpoint(900) {
+          font-size: 1.2rem;
+          &:not(:last-child) {
+            margin-right: 2.5rem;
+          }
+        }
+        @include breakpoint(1024) {
+          &:not(:last-child) {
+            margin-right: 3.5rem;
+          }
+        }
+        &:last-child {
+          border-bottom: 1px solid $font-color;
+          @include breakpoint(768) {
+            border: none;
+          }
+        }
+        > .anchor {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding: 0.3rem 0;
+          font-family: Khand;
+          color: $font-color;
+          transition: all 0.3s;
+          &::after {
+            @include breakpoint(768) {
+              transition: all 0.3s;
+              content: '';
+              position: absolute;
+              bottom: 5px;
+              left: 0;
+              display: block;
+              height: 1px;
+              width: 100%;
+              background-color: $blue-dark;
+              opacity: 0;
+            }
+          }
+        }
+        &:hover {
+          > .anchor {
+            color: $blue-dark;
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    > .language-list {
+      background-color: $white;
+      margin: 0 -8px 0;
+      @include breakpoint(768) {
+        margin: 0 0 0 0;
+      }
+      &.-open {
+        height: 36px;
+      }
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+      display: flex;
+      justify-content: space-around;
+      @include breakpoint(768) {
+        height: auto;
+        justify-content: center;
+        transform: translateY(-2px); // magic number for fonts differences
+      }
+      > .language-list-item {
+        text-align: center;
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+        > .anchor {
+          display: block;
+          padding: 0.3rem 0;
+          text-transform: capitalize;
+          color: $font-color-light;
+          transition: all 0.3s;
+        }
+        &:hover {
+          > .anchor {
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+}

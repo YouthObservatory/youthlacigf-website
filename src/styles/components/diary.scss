@@ -1,0 +1,115 @@
+.diary {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    background-color: $yellow;
+    > .content {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      background-color: $white;
+      padding: 1rem;
+      @include breakpoint(768) {
+        padding: 2rem;
+      }
+      @include breakpoint(1360) {
+        padding: 4rem;
+        width: calc(100% - 8rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      > .title {
+        font-family: 'Syncopate';
+        font-weight: 400;
+        color: $font-color;
+        text-transform: uppercase;
+        margin: 0 0 2rem 0;
+        @include breakpoint(1360) {
+          align-self: flex-start;
+        }
+      }
+      > .row.first-child {
+        @include breakpoint(1360) {
+          width: 100%;
+        }
+      }
+      > .row:not(.first-child) {
+        @include breakpoint(1360) {
+          width: 75%;
+          position: relative;
+          right: 0;
+        }
+      }
+      > .row {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        @include breakpoint(820) {
+          flex-flow: row nowrap;
+          padding: 1.5rem 0;
+          border-bottom: 0.1px solid $font-color-light;
+        }
+        @include breakpoint(1024) {
+        }
+        @include breakpoint(1360) {
+        }
+        > .event {
+          margin-bottom: 1rem;
+          border-bottom: 0.1px solid $font-color-light;
+          padding-bottom: 0.5rem;
+          @include breakpoint(820) {
+            border-bottom: 0;
+            width: calc(33% - 1rem);
+          }
+          @include breakpoint(1024) {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            width: 261.5px;
+          }
+          .time {
+            margin: 0 0 0.5rem 0;
+            color: $font-color-light;
+            font-family: 'Khand';
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 1;
+          }
+          .title {
+            &.-bold {
+              font-weight: 700;
+            }
+            &.-blue {
+              color: $blue;
+            }
+            &.-yellow {
+              color: $yellow;
+            }
+            color: $font-color;
+            font-family: 'Syncopate';
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0 0 0.5rem 0;
+            line-height: 1;
+          }
+          .description {
+            margin: 0;
+            color: $font-color;
+            margin: 0 0 0.5rem 0;
+            line-height: 1;
+          }
+        }
+      }
+      > .image {
+        display: none;
+        @include breakpoint(1360) {
+          display: block;
+          position: absolute;
+          bottom: 4rem;
+          left: 4rem;
+          max-width: 210px;
+        }
+      }
+    }
+  }
+}

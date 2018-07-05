@@ -1,0 +1,39 @@
+{
+  "name": "yought-lacigf",
+  "version": "0.1.0",
+  "description": "youth lacigf landing page",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:franklinlugo/youthlacigf.git"
+  },
+  "author": "franklin lugo",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "8.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "8.6.3",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "babel-register": "6.26.0",
+    "babelify": "8.0.0",
+    "browser-sync": "2.24.4",
+    "browserify": "16.2.2",
+    "browserify-shim": "3.8.14",
+    "cssnano": "3.10.0",
+    "del": "^3.0.0",
+    "gulp": "4.0.0",
+    "gulp-notify": "3.2.0",
+    "gulp-plumber": "1.2.0",
+    "gulp-postcss": "7.0.1",
+    "gulp-rename": "1.3.0",
+    "gulp-sass": "4.0.1",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-uglify": "3.0.0",
+    "gulp-util": "3.0.8",
+    "postcss-flexbugs-fixes": "3.3.1",
+    "vinyl-buffer": "1.0.1",
+    "vinyl-source-stream": "2.0.0"
+  }
+}

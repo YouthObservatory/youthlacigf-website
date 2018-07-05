@@ -1,0 +1,55 @@
+.footer {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 0.5rem 0 1.5rem;
+    @include breakpoint(500) {
+      flex-flow: row nowrap;
+    }
+    > .yo-logo {
+    }
+    > .contact-link {
+      margin: 1rem 0;
+      text-transform: capitalize;
+      color: $font-color;
+      transition: all 0.3s;
+      @include breakpoint(500) {
+        margin: 0 2rem;
+      }
+      @include breakpoint(768) {
+        margin: 0 4rem;
+      }
+      &:hover {
+        color: $blue-dark;
+      }
+    }
+    > .social-list {
+      display: flex;
+      margin: 0;
+      > .social-list-item {
+        &:nth-child(2) {
+          margin: 0 2rem;
+        }
+        > .link {
+          > .icon {
+            path {
+              transition: all 0.3s;
+              fill: $font-color;
+            }
+          }
+          &:hover {
+            > .icon {
+              path {
+                fill: $blue-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

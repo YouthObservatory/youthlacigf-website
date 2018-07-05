@@ -1,0 +1,86 @@
+.hero {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: calc(0.5rem + 100px);
+    @include breakpoint(1360) {
+      padding: calc(0.5rem + 70px) 4rem 0.5rem 8rem;
+      background: linear-gradient(to right, $blue 4rem, $white 4rem);
+    }
+    .column-alfa {
+      width: 100%;
+      @include breakpoint(768) {
+        width: 40%;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(1360) {
+        justify-content: flex-start;
+      }
+      > .content {
+        padding: 0 0.5rem;
+        @include breakpoint(900) {
+          width: 70%;
+        }
+        @include breakpoint(1100) {
+          width: 60%;
+        }
+        .title,
+        .subtitle {
+          margin: 0;
+          line-height: 1;
+          color: $blue;
+          text-transform: uppercase;
+          font-family: 'Syncopate';
+          font-weight: 400;
+        }
+        .subtitle {
+          color: $blue-dark;
+        }
+        .text {
+          color: $font-color-light;
+        }
+        .cta-hero {
+          display: inline-block;
+          font-family: Khand;
+          font-size: 1.2rem;
+          color: $font-color;
+          padding: 0.5rem 1rem;
+          border: 1px solid $blue;
+          border-radius: 0.3rem;
+          line-height: 1;
+          margin: 1rem 0;
+          transition: all 0.3s;
+          @include breakpoint(768) {
+            padding: 0.8rem 1.3rem;
+          }
+          &:hover {
+            color: $font-color-light;
+            background-color: $blue-dark;
+            border-color: $blue-dark;
+          }
+        }
+      }
+    }
+    .column-beta {
+      width: 100%;
+      @include breakpoint(768) {
+        width: 60%;
+      }
+      @include breakpoint(1024) {
+        > .hero-image {
+          max-width: 600px;
+        }
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint(1360) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

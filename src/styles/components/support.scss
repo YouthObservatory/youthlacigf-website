@@ -1,0 +1,57 @@
+.support {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    background-color: $white;
+    > .content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+      background-color: $blue-dark;
+      padding: 1rem;
+      @include breakpoint(768) {
+        padding: 2rem;
+      }
+      @include breakpoint(1036) {
+        padding: 4rem;
+        width: calc(100% - 8rem);
+      }
+      > .column-alfa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(768) {
+          width: 50%;
+        }
+        > .image {
+        }
+      }
+      > .column-beta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(768) {
+          width: 50%;
+        }
+        > .content {
+          width: 100%;
+          @include breakpoint(768) {
+            width: 80%;
+          }
+          .title {
+            font-family: 'Syncopate';
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $font-color-light;
+          }
+          .text {
+            color: $font-color-light;
+          }
+        }
+      }
+    }
+  }
+}

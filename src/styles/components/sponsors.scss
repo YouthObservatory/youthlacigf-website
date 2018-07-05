@@ -1,0 +1,58 @@
+.sponsors {
+  > .inner-container {
+    max-width: $inner-container-max-width;
+    margin: 0 auto;
+    background-color: $white;
+    > .content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      @include breakpoint(768) {
+      }
+      @include breakpoint(1036) {
+        width: calc(100% - 8rem);
+      }
+      > .column-alfa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue;
+        @include breakpoint(768) {
+          width: 50%;
+        }
+        > .title {
+          font-family: 'Syncopate';
+          font-weight: 400;
+          color: $white;
+        }
+      }
+      > .column-beta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        @include breakpoint(768) {
+          padding: 4rem 0;
+          width: 50%;
+        }
+        > .images-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          > .image-wrapper {
+            width: calc(33% - 1rem);
+            > .sponsor-image {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
