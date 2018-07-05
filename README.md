@@ -1,6 +1,6 @@
 # YouthLAC IGF Website Repository
 
-This repository is used to save version of YouthLAC IGF website. Started with the version of 2017 at Panamá.
+This repository is used to save version of YouthLAC IGF website. Started with the version of 2018 at Argentina.
 
 All the content here is managed by Youth Observatory members.
 

@@ -1,0 +1,26 @@
+@import 'tools/functions';
+@import 'tools/breakpoints';
+@import 'tools/mixins';
+
+@import 'settings/vars';
+@import 'settings/fonts';
+@import 'settings/colors';
+@import 'settings/global';
+
+@import 'elements/lists';
+@import 'elements/anchors';
+
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/what-gobernanza';
+@import 'components/what-youthlacigf';
+@import 'components/scholarships';
+@import 'components/location';
+@import 'components/diary';
+@import 'components/support';
+@import 'components/sponsors';
+@import 'components/footer';
+
+.is-hidden {
+  display: none !important;
+}
